@@ -5,7 +5,7 @@
 %bcond_without	static_libs # don't build static libraries
 #
 Summary:	A small and flexible linked list implementation
-Summary(pl):	Ma³a i elastyczna implementacja listy wi±zanej.
+Summary(pl):	Ma³a i elastyczna implementacja listy wi±zanej
 Name:		libsl
 Version:	0.3.2
 Release:	0.1
@@ -29,7 +29,16 @@ since there is no need to allocate or free memory for the container
 nodes. It also means that a push can't fail because memory couldn't be
 allocated for the container node.
 
-#%%description -l pl
+%description -l pl
+sl to wydajna pamiêciowo biblioteka ogólnych list wi±zanych. Nie u¿ywa
+wêz³ów kontenerowych. Zamiast tego wymaga wska¼nika do nastêpnego
+elementu bezpo¶rednio w strukturze danych, z której chce siê utworzyæ
+listy (lub stosy). Mo¿e to daæ znacz±c± oszczêdno¶æ pamiêci przy
+tworzeniu d³ugich list ma³ych struktur. Pozwala tak¿e na szybkie
+operacje "push" i "pop", jako ¿e nie ma potrzeby przydzielania i
+zwalniania pamiêci dla wêz³ów kontenerowych. Oznacza to tak¿e, ¿e
+operacja "push" nie mo¿e nie powie¶æ siê z powodu niemo¿no¶ci
+przydzielenia pamiêci na wêze³ kontenerowy.
 
 %package devel
 Summary:	Header files for libsl library
