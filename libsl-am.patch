@@ -1,0 +1,8 @@
+--- sl-0.3.3/Makefile.am~	2005-10-31 21:05:40.001358312 +0100
++++ sl-0.3.3/Makefile.am	2005-10-31 21:06:49.696763000 +0100
+@@ -1,4 +1,4 @@
+-CFLAGS = -W -Wall -Werror
++AM_CFLAGS = -W -Wall -Werror
+ 
+ include $(srcdir)/sl/makefile.mk
+ include $(srcdir)/tests/makefile.mk
