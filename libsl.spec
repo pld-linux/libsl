@@ -7,12 +7,13 @@
 Summary:	A small and flexible linked list implementation
 Summary(pl):	Ma³a i elastyczna implementacja listy wi±zanej
 Name:		libsl
-Version:	0.3.2
+Version:	0.3.3
 Release:	0.1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://brautaset.org/software/sl/download/sl-%{version}.tar.gz
-# Source0-md5:	d1b2d7b4e1ed266e901bf1c177bbba8d
+Source0:	http://dev.brautaset.org/sl/download/sl-%{version}.tar.gz
+# Source0-md5:	67bfb9a8bfd13e295d84e194d6521e3d
+Patch0:		%{name}-am.patch
 URL:		http://brautaset.org/software/sl/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -66,6 +67,7 @@ Statyczna biblioteka libsl.
 
 %prep
 %setup -q -n sl-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
