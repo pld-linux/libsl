@@ -7,17 +7,19 @@
 Summary:	A small and flexible linked list implementation
 Summary(pl):	Ma³a i elastyczna implementacja listy wi±zanej
 Name:		libsl
-Version:	0.3.3
-Release:	0.1
+Version:	0.3.4
+Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://dev.brautaset.org/sl/download/sl-%{version}.tar.gz
-# Source0-md5:	67bfb9a8bfd13e295d84e194d6521e3d
+# Source0-md5:	56d9ac18ca92436ff05ffee8ef23cdb9
 Patch0:		%{name}-am.patch
 URL:		http://brautaset.org/software/sl/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
 BuildRequires:	libtool
+# pod2man
+BuildRequires:	perl-tools-pod
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -93,17 +95,17 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libsl.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
+%attr(755,root,root) %{_libdir}/libsl.so
+%{_libdir}/libsl.la
 %{_includedir}/sl
-%{_mandir}/man3/*
+%{_mandir}/man3/sl.3*
 
 %if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libsl.a
 %endif
