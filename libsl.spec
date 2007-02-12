@@ -5,7 +5,7 @@
 %bcond_without	static_libs # don't build static libraries
 #
 Summary:	A small and flexible linked list implementation
-Summary(pl):	Ma³a i elastyczna implementacja listy wi±zanej
+Summary(pl.UTF-8):   MaÅ‚a i elastyczna implementacja listy wiÄ…zanej
 Name:		libsl
 Version:	0.3.4
 Release:	1
@@ -32,39 +32,39 @@ since there is no need to allocate or free memory for the container
 nodes. It also means that a push can't fail because memory couldn't be
 allocated for the container node.
 
-%description -l pl
-sl to wydajna pamiêciowo biblioteka ogólnych list wi±zanych. Nie u¿ywa
-wêz³ów kontenerowych. Zamiast tego wymaga wska¼nika do nastêpnego
-elementu bezpo¶rednio w strukturze danych, z której chce siê utworzyæ
-listy (lub stosy). Mo¿e to daæ znacz±c± oszczêdno¶æ pamiêci przy
-tworzeniu d³ugich list ma³ych struktur. Pozwala tak¿e na szybkie
-operacje "push" i "pop", jako ¿e nie ma potrzeby przydzielania i
-zwalniania pamiêci dla wêz³ów kontenerowych. Oznacza to tak¿e, ¿e
-operacja "push" nie mo¿e nie powie¶æ siê z powodu niemo¿no¶ci
-przydzielenia pamiêci na wêze³ kontenerowy.
+%description -l pl.UTF-8
+sl to wydajna pamiÄ™ciowo biblioteka ogÃ³lnych list wiÄ…zanych. Nie uÅ¼ywa
+wÄ™zÅ‚Ã³w kontenerowych. Zamiast tego wymaga wskaÅºnika do nastÄ™pnego
+elementu bezpoÅ›rednio w strukturze danych, z ktÃ³rej chce siÄ™ utworzyÄ‡
+listy (lub stosy). MoÅ¼e to daÄ‡ znaczÄ…cÄ… oszczÄ™dnoÅ›Ä‡ pamiÄ™ci przy
+tworzeniu dÅ‚ugich list maÅ‚ych struktur. Pozwala takÅ¼e na szybkie
+operacje "push" i "pop", jako Å¼e nie ma potrzeby przydzielania i
+zwalniania pamiÄ™ci dla wÄ™zÅ‚Ã³w kontenerowych. Oznacza to takÅ¼e, Å¼e
+operacja "push" nie moÅ¼e nie powieÅ›Ä‡ siÄ™ z powodu niemoÅ¼noÅ›ci
+przydzielenia pamiÄ™ci na wÄ™zeÅ‚ kontenerowy.
 
 %package devel
 Summary:	Header files for libsl library
-Summary(pl):	Pliki nag³ówkowe biblioteki libsl
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libsl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libsl library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libsl.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libsl.
 
 %package static
 Summary:	Static libsl library
-Summary(pl):	Statyczna biblioteka libsl
+Summary(pl.UTF-8):   Statyczna biblioteka libsl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libsl library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libsl.
 
 %prep
