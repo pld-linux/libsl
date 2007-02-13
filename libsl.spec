@@ -5,7 +5,7 @@
 %bcond_without	static_libs # don't build static libraries
 #
 Summary:	A small and flexible linked list implementation
-Summary(pl.UTF-8):   Mała i elastyczna implementacja listy wiązanej
+Summary(pl.UTF-8):	Mała i elastyczna implementacja listy wiązanej
 Name:		libsl
 Version:	0.3.4
 Release:	1
@@ -45,7 +45,7 @@ przydzielenia pamięci na węzeł kontenerowy.
 
 %package devel
 Summary:	Header files for libsl library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libsl
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libsl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -57,7 +57,7 @@ Pliki nagłówkowe biblioteki libsl.
 
 %package static
 Summary:	Static libsl library
-Summary(pl.UTF-8):   Statyczna biblioteka libsl
+Summary(pl.UTF-8):	Statyczna biblioteka libsl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
