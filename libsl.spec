@@ -8,7 +8,7 @@ Summary:	A small and flexible linked list implementation
 Summary(pl.UTF-8):	Mała i elastyczna implementacja listy wiązanej
 Name:		libsl
 Version:	0.3.4
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://dev.brautaset.org/sl/download/sl-%{version}.tar.gz
