@@ -1,0 +1,21 @@
+--- sl-0.3.4/sl/sl.c.orig	2014-01-16 12:46:22.419209142 +0100
++++ sl-0.3.4/sl/sl.c	2014-01-16 12:50:50.561090399 +0100
+@@ -49,6 +49,10 @@ structure.
+ 
+ /*
+ 
++=over
++
++=item struct sl_node
++
+ Internally the library uses a structure defined as:
+ 
+   struct sl_node {
+@@ -65,6 +69,7 @@ struct sl_node {
+ 
+ 
+ /*
++=back
+ 
+ =head1 FUNCTIONS
+ 
